@@ -1,6 +1,7 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { RiBriefcase4Fill } from "react-icons/ri";
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -8,19 +9,12 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[250px] w-full' tiltMaxAngleX={45} tiltMaxAngleY={45} scale={1} transitionSpeed={450}>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
+      <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
         <img
           src={icon}
           alt='web-development'
@@ -48,11 +42,23 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
+        JavaScript, and expertise in frameworks like React, Node.js,MongoDB,Next.js,Exprees.js and
         Three.js. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
+
+      <button
+        className='mt-6 px-6 py-3 text-white bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-md shadow-md hover:bg-gradient-to-r hover:from-cyan-600 hover:to-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50'
+        onClick={() =>
+          window.open(
+            "https://drive.google.com/file/d/1WSlStlQm21HwsT6CDqWXi36AquefCmDH/view?usp=sharing",
+            "_blank"
+          )
+        }
+      >
+        <span className='font-semibold flex gap-1.5 items-center'><RiBriefcase4Fill />Download Resume</span>
+      </button>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

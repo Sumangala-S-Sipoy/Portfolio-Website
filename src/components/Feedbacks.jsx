@@ -4,11 +4,9 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
 
 const FeedbackCard = ({
   index,
-  testimonial,
   name,
   designation,
   company,
@@ -55,9 +53,7 @@ const Feedbacks = () => {
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
+        <p className="text-secondary">Testimonials have been removed.</p>
       </div>
     </div>
   );
