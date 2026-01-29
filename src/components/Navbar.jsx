@@ -54,19 +54,7 @@ const Navbar = () => {
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
-          ))}
-
-          {/* Resume Link */}
-          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-            <a
-              href="https://khemssharma.github.io/resume/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
+          ))}</ul>
 
         {/* Mobile Menu */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -97,17 +85,6 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-
-              {/* Resume Link (Mobile) */}
-              <li className="font-medium cursor-pointer text-[16px] text-secondary hover:text-white">
-                <a
-                  href="https://khemssharma.github.io/resume/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Resume
-                </a>
-              </li>
             </ul>
           </div>
         </div>
