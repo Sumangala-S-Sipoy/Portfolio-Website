@@ -35,17 +35,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-<<<<<<< HEAD
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Sumangala S Sipoy
-            <span className='sm:block hidden'> | Full Stack Developer</span>
-=======
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Ayush Sharma&nbsp;
-            <span className="sm:block hidden">| Expert Web Developer</span>
->>>>>>> 1cbe95f86be8e911308c17ee671b14a96774bd90
+            Sumangala S Sipoy
+            <span className="sm:block hidden">| Web Developer</span>
           </p>
         </Link>
 
