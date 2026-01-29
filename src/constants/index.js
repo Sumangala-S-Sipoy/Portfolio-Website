@@ -72,8 +72,6 @@ const technologies = [
     name: "git",
     icon: git,
   },
-<<<<<<< HEAD
-=======
   {
     name: "figma",
     icon: figma,
@@ -164,7 +162,6 @@ const testimonials = [
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
->>>>>>> 1cbe95f86be8e911308c17ee671b14a96774bd90
 ];
 
 const projects = [
